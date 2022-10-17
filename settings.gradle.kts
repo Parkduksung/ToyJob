@@ -1,4 +1,5 @@
 pluginManagement {
+    includeBuild("build-logic")
     repositories {
         gradlePluginPortal()
         google()
@@ -13,4 +14,7 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "ToyJob"
-include ':app'
+include(":app")
+include(":core-ui")
+include(":core-navigation")
+include(":core-common")
